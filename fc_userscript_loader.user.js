@@ -1,19 +1,17 @@
 // ==UserScript==
 // @name Frozen Cookies
 // @version github-latest
-// @description Userscript to load Frozen Cookies written by Icehawk78
-// @author shinji257
-// @homepage https://github.com/Icehawk78/FrozenCookies
+// @description Userscript to load Frozen Cookies written by Icehawk78 (modded by CobaltStarr)
+// @author shinji257 (mod by CobaltStarr)
 // @include http://orteil.dashnet.org/cookieclicker/
-// @updateURL http://cobaltstarr.github.io/FrozenCookies/fc_userscript_loader.user.js
-// @downloadURL http://cobaltstarr.github.io/FrozenCookies/fc_userscript_loader.user.js
+// @homepage https://github.com/CobaltStarr/FrozenCookies
+// @updateURL https://github.com/CobaltStarr/FrozenCookies/raw/master/fc_userscript_loader.user.js
+// @downloadURL https://github.com/CobaltStarr/FrozenCookies/raw/master/fc_userscript_loader.user.js
 // ==/UserScript==
 
 // Dev: https://raw.github.com/Icehawk78/FrozenCookies/development/
 // Master: https://raw.github.com/Icehawk78/FrozenCookies/master/
 // Github.io: http://icehawk78.github.io/FrozenCookies/
-
-// Upgrade priority target list, highest priority target LAST.
 
 
 function autoPurchase() {
@@ -25,6 +23,7 @@ function autoPurchase() {
 	}
 }
 autoPurchase.priorities = [
+	// Upgrade priority target list.
 	69,  // One Mind
 	141, // Persistent memory
 	163, // Santa's bottomless bag
