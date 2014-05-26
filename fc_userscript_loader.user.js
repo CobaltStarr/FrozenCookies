@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name Frozen Cookies
-// @version github-latest
+// @version 1
 // @description Userscript to load Frozen Cookies written by Icehawk78 (modded by CobaltStarr)
 // @author shinji257 (mod by CobaltStarr)
 // @include http://orteil.dashnet.org/cookieclicker/
