@@ -13,8 +13,10 @@
 // Master: https://raw.github.com/Icehawk78/FrozenCookies/master/
 // Github.io: http://icehawk78.github.io/FrozenCookies/
 
-
+// Buys certain upgrades as soon as they become available, because Frozen Cookie won't buy them at all. :/
 function autoPurchase() {
+	if(typeof Game === 'undefined' || !Game.ready)
+		return;
 	var priorities = autoPurchase.priorities;
 	for(var i = 0; i < priorities.length; ++i) {
 		var priority = Game.UpgradesById[priorities[i]];
@@ -24,7 +26,7 @@ function autoPurchase() {
 }
 autoPurchase.priorities = [
 	// Upgrade priority target list.
-	69,  // One Mind
+	69,  // One Mind (Frozen Cookie won't buy this after a reset in Grandmapocalypse Mode, even though that's the whole POINT!)
 	141, // Persistent memory
 	163, // Santa's bottomless bag
 	226, // Omelette
@@ -36,10 +38,9 @@ function LoadFrozenCookies() {
 	var js = document.createElement('script');
 	js.setAttribute('type', 'text/javascript');
 	js.setAttribute('id', 'frozenCookieScript');
-	js.setAttribute('src', 'http://icehawk78.github.io/FrozenCookies/frozen_cookies.js');
+	js.setAttribute('src', 'https://github.com/CobaltStarr/FrozenCookies/raw/master/frozen_cookies.js');
 	document.head.appendChild(js);
 }
-
 // It's not the best way but Chrome doesn't work with addEventListener... :(
 // Delay load by 2 seconds to allow the site to load itself first.)
 window.setTimeout(LoadFrozenCookies, 2000);
