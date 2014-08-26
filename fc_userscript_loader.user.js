@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name Frozen Cookies
+// @name Frozen Cookies (CS)
 // @version 1
 // @description Userscript to load Frozen Cookies written by Icehawk78 (modded by CobaltStarr)
 // @author shinji257 (mod by CobaltStarr)
