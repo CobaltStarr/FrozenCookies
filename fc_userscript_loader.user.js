@@ -38,7 +38,7 @@ function LoadFrozenCookies() {
 	var js = document.createElement('script');
 	js.setAttribute('type', 'text/javascript');
 	js.setAttribute('id', 'frozenCookieScript');
-	js.setAttribute('src', 'https://github.com/CobaltStarr/FrozenCookies/raw/master/frozen_cookies.js');
+	js.setAttribute('src', 'https://rawgit.com/CobaltStarr/FrozenCookies/master/frozen_cookies.js');
 	document.head.appendChild(js);
 }
 // It's not the best way but Chrome doesn't work with addEventListener... :(
